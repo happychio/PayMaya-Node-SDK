@@ -4,7 +4,8 @@
   "description": "Node.js Client for Paymaya API",
   "main": "index.js",
   "scripts": {
-    "test": "find test -name '*.js' | xargs mocha -R spec --timeout 10000"
+    "test": "find test -name '*.js' | xargs mocha -R spec --timeout 10000",
+    "start": "node index.js"
   },
   "keywords": [
     "paymaya",
@@ -14,6 +15,8 @@
   "author": "PayMaya Philippines, Inc.",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.3",
+    "paymaya-node-sdk": "^0.1.2",
     "requestretry": "1.4.0"
   },
   "devDependencies": {
